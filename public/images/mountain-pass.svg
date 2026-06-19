@@ -1,0 +1,100 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.32
+        0 0 0 0 0.2
+        0 0 0 0 0.07
+        0 0 0 0.2 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8a888"/>
+      <stop offset="100%" stop-color="#d0c4a8"/>
+    </linearGradient>
+    <linearGradient id="snowPeak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ece4d4"/>
+      <stop offset="25%" stop-color="#d8d0c0"/>
+      <stop offset="100%" stop-color="#7a6a4a"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a4a32"/>
+      <stop offset="100%" stop-color="#3a2d20"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="50%" stop-color="#a08868"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <g opacity="0.5">
+    <path d="M0,280 L200,180 L400,240 L600,160 L800,220 L800,350 L0,350 Z" fill="#908060"/>
+  </g>
+
+  <path d="M0,400 L180,120 L380,250 L520,100 L680,220 L800,160 L800,450 L0,450 Z" fill="url(#snowPeak)"/>
+  <path d="M180,120 L150,220 L220,180 Z" fill="#f0e8d8" opacity="0.9"/>
+  <path d="M520,100 L480,200 L560,180 Z" fill="#f0e8d8" opacity="0.85"/>
+  <path d="M680,220 L650,280 L720,260 Z" fill="#f0e8d8" opacity="0.6"/>
+
+  <path d="M0,450 L150,420 L300,440 L450,410 L600,430 L800,400 L800,600 L0,600 Z" fill="url(#rock)" opacity="0.95"/>
+
+  <g fill="#4a3c2c" opacity="0.7">
+    <polygon points="80,460 140,430 170,455 110,480"/>
+    <polygon points="200,470 260,440 290,465 230,490"/>
+    <polygon points="620,450 680,420 720,450 650,485"/>
+    <polygon points="720,470 780,445 800,465 750,495"/>
+  </g>
+
+  <path d="M0,520 Q150,490 300,510 Q450,535 600,510 Q700,495 800,505" fill="none" stroke="url(#path)" stroke-width="22" opacity="0.6" stroke-linecap="round"/>
+  <path d="M0,520 Q150,490 300,510 Q450,535 600,510 Q700,495 800,505" fill="none" stroke="#d0c4a8" stroke-width="3" stroke-dasharray="6,10" opacity="0.7"/>
+
+  <g fill="#4a3c2c" opacity="0.85">
+    <g transform="translate(200, 450)">
+      <ellipse cx="0" cy="65" rx="16" ry="6"/>
+      <rect x="-8" y="15" width="16" height="50" rx="4"/>
+      <rect x="-14" y="25" width="28" height="35" rx="5"/>
+      <circle cx="0" cy="8" r="10"/>
+      <rect x="-4" y="-2" width="8" height="7" fill="#8b7355" rx="1"/>
+    </g>
+    <g transform="translate(350, 458)">
+      <ellipse cx="0" cy="60" rx="14" ry="5"/>
+      <rect x="-7" y="18" width="14" height="42" rx="4"/>
+      <rect x="-12" y="26" width="24" height="30" rx="5"/>
+      <circle cx="0" cy="10" r="9"/>
+      <rect x="-3.5" y="1" width="7" height="6" fill="#8b7355" rx="1"/>
+    </g>
+    <g transform="translate(450, 445)">
+      <ellipse cx="0" cy="70" rx="16" ry="6"/>
+      <rect x="-8" y="16" width="16" height="54" rx="4"/>
+      <rect x="-14" y="26" width="28" height="38" rx="5"/>
+      <circle cx="0" cy="9" r="10"/>
+      <rect x="-4" y="0" width="8" height="7" fill="#8b7355" rx="1"/>
+    </g>
+    <g transform="translate(560, 455)">
+      <ellipse cx="0" cy="62" rx="15" ry="5.5"/>
+      <rect x="-7.5" y="17" width="15" height="45" rx="4"/>
+      <rect x="-13" y="27" width="26" height="32" rx="5"/>
+      <circle cx="0" cy="9" r="9.5"/>
+    </g>
+  </g>
+
+  <g fill="#c9b896" opacity="0.8">
+    <path d="M400,440 Q430,420 460,440 L460,450 Q430,432 400,450 Z" opacity="0.6"/>
+    <path d="M280,460 Q305,445 330,460 L330,468 Q305,455 280,468 Z" opacity="0.5"/>
+  </g>
+
+  <g fill="none" stroke="#e8d9b8" stroke-width="2" opacity="0.4">
+    <path d="M50,150 L150,200" stroke-dasharray="5,8"/>
+    <path d="M700,140 L650,180" stroke-dasharray="5,8"/>
+  </g>
+
+  <rect width="800" height="600" filter="url(#grain)" opacity="0.4"/>
+  <rect width="800" height="600" fill="#6b5540" opacity="0.12" style="mix-blend-mode:multiply"/>
+
+  <rect x="0" y="0" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+</svg>

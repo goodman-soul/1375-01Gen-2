@@ -17,7 +17,7 @@ export function Hero() {
     >
       <div className="absolute inset-0">
         <img
-          src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=dramatic%20panoramic%20landscape%20of%20Tibetan%20plateau%20mountain%20road%20winding%20through%20snow%20capped%20peaks%20yaks%20grazing%20golden%20sunrise%20mist%20in%20valley&image_size=landscape_16_9"
+          src="/images/hero-landscape.svg"
           alt="茶马古道高原风景"
           className="w-full h-full object-cover old-photo"
           loading="eager"
@@ -87,7 +87,7 @@ export function Hero() {
                 }
               >
                 <OldPhoto
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vintage%20sepia%20photograph%20of%20Chinese%20tea%20porters%20carrying%20huge%20baskets%20on%20mountain%20path%20Sichuan%201920s&image_size=portrait_4_3"
+                  src="/images/porters-group.svg"
                   alt="背夫旧照"
                   showTape
                   rotateDeg={-4}
@@ -103,7 +103,7 @@ export function Hero() {
                 }
               >
                 <OldPhoto
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vintage%20sepia%20photograph%20of%20Tibetan%20horse%20caravan%20crossing%20high%20mountain%20pass%20yaks%20snow%201920s&image_size=portrait_4_3"
+                  src="/images/caravan-snow.svg"
                   alt="马帮过雪山"
                   showTape
                   rotateDeg={5}
@@ -119,7 +119,7 @@ export function Hero() {
                 }
               >
                 <OldPhoto
-                  src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vintage%20sepia%20photograph%20of%20old%20tea%20warehouse%20stacked%20tea%20bricks%20Chinese%20merchant%20street%20market%20Ya%27an%201910s&image_size=portrait_4_3"
+                  src="/images/tea-warehouse.svg"
                   alt="茶仓旧照"
                   showTape
                   rotateDeg={-2}

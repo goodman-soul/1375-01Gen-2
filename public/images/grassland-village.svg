@@ -1,0 +1,130 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.35
+        0 0 0 0 0.22
+        0 0 0 0 0.08
+        0 0 0 0.22 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b9d0e0"/>
+      <stop offset="100%" stop-color="#d8d0b8"/>
+    </linearGradient>
+    <linearGradient id="mtFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a9aa8"/>
+      <stop offset="100%" stop-color="#a0a890"/>
+    </linearGradient>
+    <linearGradient id="mtSnow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ece4d4"/>
+      <stop offset="30%" stop-color="#d0c8b8"/>
+      <stop offset="100%" stop-color="#7a8268"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#90a060"/>
+      <stop offset="50%" stop-color="#7a8a4a"/>
+      <stop offset="100%" stop-color="#5a6a30"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <circle cx="650" cy="100" r="50" fill="#f0e6cf" opacity="0.45"/>
+
+  <path d="M0,300 L150,240 L320,280 L480,220 L640,270 L800,240 L800,380 L0,380 Z" fill="url(#mtFar)" opacity="0.5"/>
+
+  <path d="M0,380 L180,250 L350,320 L520,240 L680,310 L800,280 L800,430 L0,430 Z" fill="url(#mtSnow)"/>
+  <path d="M180,250 L160,310 L210,285 Z" fill="#f0e8d8" opacity="0.85"/>
+  <path d="M520,240 L500,300 L555,275 Z" fill="#f0e8d8" opacity="0.8"/>
+  <path d="M350,320 L335,360 L375,345 Z" fill="#f0e8d8" opacity="0.5"/>
+
+  <rect y="420" width="800" height="180" fill="url(#grass)"/>
+
+  <g fill="#6a7a38" opacity="0.4">
+    <path d="M0,460 Q150,445 300,455 Q450,465 600,458 Q720,452 800,462 L800,475 Q700,465 550,472 Q400,480 250,472 Q120,466 0,478 Z"/>
+    <path d="M0,500 Q200,485 400,495 Q600,505 800,495 L800,515 Q600,505 400,515 Q200,525 0,515 Z" opacity="0.7"/>
+  </g>
+
+  <g fill="#8b7355" opacity="0.85">
+    <g>
+      <rect x="180" y="460" width="80" height="70"/>
+      <polygon points="170,460 220,420 270,460" fill="#6b5540"/>
+      <rect x="200" y="485" width="25" height="45" fill="#5a4a30"/>
+      <rect x="190" y="440" width="8" height="25" fill="#a08868" opacity="0.6"/>
+    </g>
+    <g transform="translate(80, 20) scale(0.85)">
+      <rect x="180" y="460" width="70" height="60"/>
+      <polygon points="172,460 215,428 258,460" fill="#6b5540"/>
+      <rect x="195" y="485" width="22" height="35" fill="#5a4a30"/>
+    </g>
+    <g transform="translate(450, 10) scale(0.9)">
+      <rect x="180" y="460" width="75" height="65"/>
+      <polygon points="170,460 217,425 265,460" fill="#6b5540"/>
+      <rect x="200" y="485" width="24" height="40" fill="#5a4a30"/>
+    </g>
+    <g transform="translate(560, 25) scale(0.78)">
+      <rect x="180" y="460" width="70" height="55"/>
+      <polygon points="172,460 215,430 258,460" fill="#6b5540"/>
+      <rect x="195" y="482" width="20" height="33" fill="#5a4a30"/>
+    </g>
+  </g>
+
+  <g fill="#c62828" opacity="0.85">
+    <rect x="230" y="425" width="4" height="50" fill="#4a3c2c"/>
+    <rect x="234" y="428" width="12" height="8"/>
+    <rect x="234" y="438" width="14" height="6"/>
+    <rect x="234" y="446" width="11" height="7"/>
+  </g>
+  <g fill="#1565c0" opacity="0.8">
+    <rect x="340" y="435" width="3" height="40" fill="#4a3c2c"/>
+    <rect x="343" y="438" width="10" height="7"/>
+    <rect x="343" y="447" width="12" height="5"/>
+  </g>
+  <g fill="#f9a825" opacity="0.8">
+    <rect x="550" y="430" width="4" height="45" fill="#4a3c2c"/>
+    <rect x="554" y="433" width="13" height="8"/>
+    <rect x="554" y="443" width="11" height="6"/>
+  </g>
+  <g fill="#2e7d32" opacity="0.8">
+    <rect x="650" y="440" width="3" height="38" fill="#4a3c2c"/>
+    <rect x="653" y="443" width="10" height="7"/>
+  </g>
+
+  <g fill="#3a2d20" opacity="0.7">
+    <ellipse cx="420" cy="570" rx="25" ry="10"/>
+    <ellipse cx="460" cy="573" rx="20" ry="8"/>
+    <ellipse cx="500" cy="568" rx="26" ry="10"/>
+    <ellipse cx="540" cy="575" rx="22" ry="9"/>
+  </g>
+
+  <g fill="#5a4a30" opacity="0.6">
+    <ellipse cx="320" cy="555" rx="18" ry="7"/>
+    <ellipse cx="355" cy="558" rx="16" ry="6"/>
+    <ellipse cx="290" cy="560" rx="15" ry="6"/>
+  </g>
+
+  <g fill="none" stroke="#5a6a3a" stroke-width="1.5" opacity="0.5">
+    <path d="M0,530 Q200,515 400,525 Q600,535 800,525" stroke-dasharray="5,8"/>
+  </g>
+
+  <g fill="#4a3c2c" opacity="0.55">
+    <g transform="translate(500, 530)">
+      <ellipse cx="0" cy="28" rx="10" ry="3.5"/>
+      <rect x="-5" y="3" width="10" height="25" rx="3"/>
+      <circle cx="0" cy="-2" r="7"/>
+    </g>
+    <g transform="translate(460, 535)">
+      <ellipse cx="0" cy="25" rx="9" ry="3"/>
+      <rect x="-4.5" y="5" width="9" height="20" rx="2.5"/>
+      <circle cx="0" cy="0" r="6.5"/>
+    </g>
+  </g>
+
+  <rect width="800" height="600" filter="url(#grain)" opacity="0.35"/>
+  <rect width="800" height="600" fill="#8B5A2B" opacity="0.12" style="mix-blend-mode:multiply"/>
+
+  <rect x="0" y="0" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+</svg>

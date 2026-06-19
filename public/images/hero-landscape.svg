@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="sepia" x="0" y="0" width="100%" height="100%">
+      <feColorMatrix type="matrix" values="
+        0.393 0.769 0.189 0 0.1
+        0.349 0.686 0.168 0 0.05
+        0.272 0.534 0.131 0 0
+        0     0     0     1 0"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.35
+        0 0 0 0 0.22
+        0 0 0 0 0.08
+        0 0 0 0.18 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9b896"/>
+      <stop offset="40%" stop-color="#d9c8a6"/>
+      <stop offset="100%" stop-color="#e8d9b8"/>
+    </linearGradient>
+    <linearGradient id="farMt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="60%" stop-color="#a08868"/>
+      <stop offset="100%" stop-color="#b8a080"/>
+    </linearGradient>
+    <linearGradient id="midMt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b5540"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    <linearGradient id="nearMt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3c2c"/>
+      <stop offset="100%" stop-color="#6b5540"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0e8d8"/>
+      <stop offset="100%" stop-color="#d8cfbf"/>
+    </linearGradient>
+    <linearGradient id="valley" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a8a5a"/>
+      <stop offset="100%" stop-color="#5a6a3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#sky)"/>
+
+  <g opacity="0.6">
+    <circle cx="1000" cy="120" r="60" fill="#e8d9b8" opacity="0.6"/>
+    <circle cx="1000" cy="120" r="40" fill="#f0e6cf" opacity="0.5"/>
+  </g>
+
+  <g opacity="0.7">
+    <path d="M0,340 L120,280 L200,310 L320,240 L420,280 L560,200 L700,260 L820,210 L960,270 L1080,230 L1200,290 L1200,400 L0,400 Z" fill="url(#farMt)"/>
+  </g>
+
+  <g opacity="0.85">
+    <path d="M0,400 L150,320 L280,370 L420,290 L550,350 L700,270 L850,330 L1000,260 L1150,320 L1200,300 L1200,450 L0,450 Z" fill="url(#midMt)"/>
+    <path d="M420,290 L400,250 L440,240 L470,260 L500,245 L530,275 L550,265 L550,350 L420,350 Z" fill="url(#snow)"/>
+    <path d="M700,270 L680,230 L720,220 L750,250 L780,235 L800,260 L820,245 L850,280 L850,330 L700,330 Z" fill="url(#snow)" opacity="0.9"/>
+    <path d="M1000,260 L980,225 L1020,215 L1050,240 L1070,225 L1100,250 L1150,230 L1150,320 L1000,320 Z" fill="url(#snow)" opacity="0.8"/>
+  </g>
+
+  <path d="M0,480 L180,410 L320,450 L480,390 L620,440 L780,395 L920,450 L1080,410 L1200,460 L1200,675 L0,675 Z" fill="url(#nearMt)"/>
+  
+  <path d="M480,390 L460,350 L520,340 L560,360 L620,345 L620,440 L480,440 Z" fill="url(#snow)" opacity="0.7"/>
+
+  <path d="M0,540 L200,500 L400,530 L600,495 L800,520 L1000,490 L1200,530 L1200,675 L0,675 Z" fill="url(#valley)" opacity="0.85"/>
+
+  <g fill="#5a4a30" opacity="0.6">
+    <path d="M200,520 Q250,500 300,520 Q350,540 380,525 L380,540 L200,540 Z"/>
+    <path d="M700,510 Q750,490 800,515 Q850,535 870,520 L870,535 L700,535 Z"/>
+  </g>
+
+  <g stroke="#6b5a3c" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M100,580 Q300,550 500,570 Q700,590 900,560 Q1050,545 1200,570" stroke-dasharray="6,4"/>
+  </g>
+
+  <g fill="#4a3c2c" opacity="0.7">
+    <ellipse cx="180" cy="595" rx="40" ry="18"/>
+    <ellipse cx="230" cy="600" rx="35" ry="15"/>
+    <ellipse cx="820" cy="590" rx="50" ry="22"/>
+    <ellipse cx="900" cy="600" rx="30" ry="14"/>
+  </g>
+
+  <g fill="#8b7355" opacity="0.6">
+    <rect x="170" y="580" width="20" height="30"/>
+    <rect x="195" y="585" width="15" height="22"/>
+    <polygon points="165,580 195,565 195,580" fill="#6b5540"/>
+    <polygon points="192,585 213,573 213,585" fill="#6b5540"/>
+    
+    <rect x="810" y="575" width="25" height="35"/>
+    <rect x="840" y="580" width="18" height="28"/>
+    <polygon points="805,575 840,558 840,575" fill="#6b5540"/>
+  </g>
+
+  <g fill="none" stroke="#6b5540" stroke-width="0.8" opacity="0.4">
+    <path d="M0,620 L1200,620"/>
+    <path d="M0,640 L1200,640"/>
+    <path d="M0,655 L1200,655"/>
+  </g>
+
+  <rect width="1200" height="675" filter="url(#grain)" opacity="0.35"/>
+  <rect width="1200" height="675" fill="url(#sky)" opacity="0.08" style="mix-blend-mode:multiply"/>
+  
+  <rect x="0" y="0" width="1200" height="4" fill="#4a3c2c" opacity="0.4"/>
+  <rect x="0" y="671" width="1200" height="4" fill="#4a3c2c" opacity="0.4"/>
+  <rect x="0" y="0" width="4" height="675" fill="#4a3c2c" opacity="0.4"/>
+  <rect x="1196" y="0" width="4" height="675" fill="#4a3c2c" opacity="0.4"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.32
+        0 0 0 0 0.2
+        0 0 0 0 0.07
+        0 0 0 0.22 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a89878"/>
+      <stop offset="100%" stop-color="#c2b08c"/>
+    </linearGradient>
+    <linearGradient id="snowMt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0d8c8"/>
+      <stop offset="30%" stop-color="#d0c8b8"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b5540"/>
+      <stop offset="100%" stop-color="#4a3c2c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <g opacity="0.5">
+    <path d="M0,250 L150,180 L280,220 L420,150 L560,210 L700,160 L800,220 L800,320 L0,320 Z" fill="#a09070"/>
+  </g>
+
+  <path d="M0,380 L200,200 L350,280 L500,180 L650,260 L800,220 L800,420 L0,420 Z" fill="url(#snowMt)"/>
+
+  <path d="M200,200 L180,250 L230,230 L200,200 Z" fill="#f0e8d8" opacity="0.8"/>
+  <path d="M500,180 L470,240 L530,220 L500,180 Z" fill="#f0e8d8" opacity="0.7"/>
+  <path d="M650,260 L630,290 L680,280 L650,260 Z" fill="#f0e8d8" opacity="0.6"/>
+
+  <path d="M0,420 L120,400 L260,420 L420,390 L560,410 L700,395 L800,420 L800,600 L0,600 Z" fill="url(#rock)"/>
+
+  <g fill="#3a2a1a" opacity="0.9">
+    <ellipse cx="350" cy="470" rx="35" ry="15"/>
+    <ellipse cx="430" cy="475" rx="32" ry="14"/>
+    <ellipse cx="500" cy="465" rx="36" ry="15"/>
+    <ellipse cx="280" cy="480" rx="30" ry="13"/>
+  </g>
+
+  <g fill="#4a3c2c">
+    <g transform="translate(300, 380)">
+      <ellipse cx="50" cy="90" rx="40" ry="12" fill="#3E2D20"/>
+      <rect x="30" y="30" width="40" height="60" rx="5"/>
+      <rect x="20" y="45" width="60" height="40" rx="6"/>
+      <polygon points="50,10 65,22 35,22" fill="#6b5540"/>
+      <circle cx="50" cy="25" r="10"/>
+      <rect x="42" y="65" width="16" height="30" fill="#a89878" opacity="0.25"/>
+      <rect x="22" y="50" width="6" height="45" rx="2"/>
+      <rect x="72" y="50" width="6" height="45" rx="2"/>
+    </g>
+
+    <g transform="translate(380, 390)">
+      <ellipse cx="50" cy="85" rx="38" ry="11" fill="#3E2D20"/>
+      <rect x="30" y="28" width="40" height="57" rx="5"/>
+      <rect x="20" y="42" width="60" height="38" rx="6"/>
+      <polygon points="50,8 65,20 35,20" fill="#6b5540"/>
+      <circle cx="50" cy="23" r="10"/>
+      <rect x="42" y="62" width="16" height="28" fill="#a89878" opacity="0.25"/>
+      <rect x="22" y="47" width="6" height="43" rx="2"/>
+      <rect x="72" y="47" width="6" height="43" rx="2"/>
+    </g>
+  </g>
+
+  <g fill="#5a4a30" opacity="0.7">
+    <path d="M100,450 Q200,430 300,440 L300,445 Q200,435 100,455 Z"/>
+    <path d="M550,450 Q650,435 750,445 L750,450 Q650,440 550,455 Z"/>
+  </g>
+
+  <g stroke="#4a3c2c" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M0,500 L800,500" stroke-dasharray="3,5"/>
+  </g>
+
+  <g fill="none" stroke="#d0c8b8" stroke-width="2" opacity="0.5">
+    <path d="M380,350 Q420,320 460,340" stroke-dasharray="4,4"/>
+    <path d="M460,340 Q500,310 540,330" stroke-dasharray="4,4"/>
+  </g>
+
+  <rect width="800" height="600" filter="url(#grain)" opacity="0.4"/>
+  <rect width="800" height="600" fill="#6b5540" opacity="0.12" style="mix-blend-mode:multiply"/>
+
+  <rect x="0" y="0" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+</svg>

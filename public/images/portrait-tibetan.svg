@@ -1,0 +1,90 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.36
+        0 0 0 0 0.23
+        0 0 0 0 0.09
+        0 0 0 0.22 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <radialGradient id="vignette3">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="#bfa888"/>
+  <ellipse cx="300" cy="300" rx="220" ry="260" fill="#a89070"/>
+
+  <g fill="#3a2d20">
+    <path d="M190,210 Q195,130 300,110 Q405,130 410,210 L400,200 Q398,140 300,125 Q202,140 200,200 Z" opacity="0.9"/>
+    <rect x="195" y="145" width="210" height="35" fill="#c62828" opacity="0.55"/>
+    <rect x="260" y="115" width="80" height="40" fill="#c62828" opacity="0.6"/>
+  </g>
+
+  <g fill="#a88c6a">
+    <ellipse cx="300" cy="290" rx="105" ry="130"/>
+    <path d="M205,285 Q200,370 245,455 Q285,485 300,488 Q315,485 355,455 Q400,370 395,285 Q392,200 300,195 Q208,200 205,285 Z" fill="#8b7055" opacity="0.45"/>
+  </g>
+
+  <g fill="#6b5540">
+    <ellipse cx="255" cy="275" rx="20" ry="26"/>
+    <ellipse cx="345" cy="275" rx="20" ry="26"/>
+    <circle cx="255" cy="280" r="9" fill="#2E1F15"/>
+    <circle cx="345" cy="280" r="9" fill="#2E1F15"/>
+    <circle cx="258" cy="276" r="3" fill="#d9c8a6" opacity="0.3"/>
+    <circle cx="348" cy="276" r="3" fill="#d9c8a6" opacity="0.3"/>
+  </g>
+
+  <g fill="#5a4a30">
+    <path d="M265,345 Q285,360 300,363 Q315,360 335,345 L330,352 Q315,365 300,367 Q285,365 270,352 Z" opacity="0.6"/>
+    <ellipse cx="300" cy="355" rx="20" ry="9" fill="#4a3c2c" opacity="0.45"/>
+  </g>
+
+  <g fill="#8b6f4f" opacity="0.35">
+    <ellipse cx="230" cy="310" rx="16" ry="22"/>
+    <ellipse cx="370" cy="310" rx="16" ry="22"/>
+  </g>
+
+  <g fill="#c62828" opacity="0.55">
+    <path d="M220,200 Q235,185 250,200 L248,205 Q235,192 222,207 Z"/>
+    <path d="M380,200 Q365,185 350,200 L352,205 Q365,192 378,207 Z"/>
+    <rect x="270" y="178" width="60" height="8" rx="2"/>
+    <rect x="285" y="155" width="30" height="25" rx="3" opacity="0.7"/>
+  </g>
+
+  <g fill="#8b7355" opacity="0.6">
+    <ellipse cx="300" cy="480" rx="85" ry="40"/>
+    <ellipse cx="300" cy="480" rx="65" ry="32" fill="#7a6548" opacity="0.6"/>
+    <rect x="225" y="415" width="25" height="70" rx="5"/>
+    <rect x="350" y="415" width="25" height="70" rx="5"/>
+    <rect x="220" y="410" width="35" height="30" rx="6"/>
+    <rect x="345" y="410" width="35" height="30" rx="6"/>
+  </g>
+
+  <g fill="#c9b896" opacity="0.3">
+    <ellipse cx="240" cy="295" rx="16" ry="11"/>
+    <ellipse cx="360" cy="295" rx="16" ry="11"/>
+  </g>
+
+  <g fill="#f9a825" opacity="0.4">
+    <circle cx="270" cy="205" r="3"/>
+    <circle cx="330" cy="205" r="3"/>
+    <circle cx="300" cy="198" r="3.5"/>
+    <circle cx="255" cy="230" r="2.5"/>
+    <circle cx="345" cy="230" r="2.5"/>
+  </g>
+
+  <g fill="none" stroke="#5a4a30" stroke-width="1" opacity="0.4">
+    <path d="M250,350 Q280,365 300,368 Q320,365 350,350" stroke-width="1.5" opacity="0.5"/>
+    <path d="M260,380 Q290,392 300,395 Q310,392 340,380" opacity="0.4"/>
+  </g>
+
+  <rect width="600" height="600" fill="url(#vignette3)"/>
+  <rect width="600" height="600" filter="url(#grain)" opacity="0.5"/>
+  <rect width="600" height="600" fill="#8B5A2B" opacity="0.2" style="mix-blend-mode:multiply"/>
+
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#5a4a30" stroke-width="2" opacity="0.4"/>
+</svg>

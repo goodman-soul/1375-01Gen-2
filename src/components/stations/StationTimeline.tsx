@@ -14,7 +14,7 @@ export function StationTimeline({ onSelectStation }: StationTimelineProps) {
     <SectionWrapper
       id="stations"
       eyebrow="驿站 · Stations"
-      title="十里一铺 六十一站"
+      title="十里一铺 八十六驿"
       subtitle="从青衣江畔到金沙江岸，两千四百里山路上，曾有八十六处官办驿站与民间伙铺。每一处屋檐下，都曾歇过背夫的肩头与茶商的梦。"
       variant="light"
     >

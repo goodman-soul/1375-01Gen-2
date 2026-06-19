@@ -1,0 +1,152 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.35
+        0 0 0 0 0.22
+        0 0 0 0 0.08
+        0 0 0 0.2 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6b5030"/>
+      <stop offset="25%" stop-color="#8b6a40"/>
+      <stop offset="50%" stop-color="#7a5a35"/>
+      <stop offset="75%" stop-color="#9b7a50"/>
+      <stop offset="100%" stop-color="#6b5030"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="100%" stop-color="#6b5540"/>
+    </linearGradient>
+    <linearGradient id="rooftop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3c2c"/>
+      <stop offset="100%" stop-color="#3a2d20"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#c9b896"/>
+
+  <g fill="url(#wood)" opacity="0.9">
+    <rect x="0" y="0" width="80" height="600"/>
+    <rect x="720" y="0" width="80" height="600"/>
+  </g>
+
+  <g stroke="#5a4a30" stroke-width="1.5" opacity="0.35">
+    <line x1="80" y1="0" x2="80" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/>
+    <line x1="80" y1="100" x2="720" y2="100"/>
+  </g>
+
+  <g fill="url(#wall)">
+    <rect x="120" y="180" width="140" height="380"/>
+    <rect x="290" y="160" width="160" height="400"/>
+    <rect x="480" y="200" width="120" height="360"/>
+    <rect x="630" y="170" width="130" height="390"/>
+  </g>
+
+  <g fill="url(#rooftop)">
+    <polygon points="110,180 190,120 270,180"/>
+    <polygon points="280,160 370,95 460,160"/>
+    <polygon points="470,200 540,140 610,200"/>
+    <polygon points="620,170 695,110 770,170"/>
+  </g>
+
+  <g fill="#3E2D20" opacity="0.8">
+    <rect x="160" y="430" width="40" height="130"/>
+    <rect x="340" y="400" width="50" height="160"/>
+    <rect x="510" y="440" width="35" height="120"/>
+    <rect x="670" y="420" width="45" height="140"/>
+  </g>
+
+  <g fill="#d9c8a6" opacity="0.6">
+    <rect x="145" y="250" width="25" height="40"/>
+    <rect x="200" y="250" width="25" height="40"/>
+    <rect x="315" y="230" width="30" height="50"/>
+    <rect x="395" y="230" width="30" height="50"/>
+    <rect x="495" y="270" width="22" height="35"/>
+    <rect x="550" y="270" width="22" height="35"/>
+    <rect x="645" y="240" width="28" height="45"/>
+    <rect x="710" y="240" width="28" height="45"/>
+  </g>
+
+  <g fill="#5a4028">
+    <g opacity="0.9">
+      <rect x="130" y="260" width="8" height="60"/>
+      <rect x="240" y="270" width="8" height="50"/>
+      <rect x="300" y="240" width="9" height="65"/>
+      <rect x="440" y="250" width="9" height="55"/>
+    </g>
+  </g>
+
+  <g fill="#6b5030">
+    <rect x="160" y="570" width="480" height="20"/>
+    <rect x="160" y="555" width="480" height="8" fill="#7a6040"/>
+  </g>
+
+  <g fill="#4a3c2c">
+    <g transform="translate(180, 500)">
+      <rect x="0" y="0" width="50" height="65" rx="3"/>
+      <rect x="-5" y="5" width="60" height="55" rx="3"/>
+      <rect x="5" y="10" width="40" height="10" fill="#8b7355" opacity="0.3"/>
+      <rect x="5" y="25" width="40" height="8" fill="#8b7355" opacity="0.3"/>
+      <rect x="5" y="38" width="40" height="12" fill="#8b7355" opacity="0.3"/>
+      <text x="25" y="58" text-anchor="middle" fontSize="8" fill="#c9b896" opacity="0.5" fontWeight="bold">茶</text>
+    </g>
+
+    <g transform="translate(260, 495)">
+      <rect x="0" y="0" width="55" height="70" rx="3"/>
+      <rect x="-5" y="5" width="65" height="60" rx="3"/>
+      <rect x="5" y="10" width="45" height="12" fill="#8b7355" opacity="0.3"/>
+      <rect x="5" y="28" width="45" height="10" fill="#8b7355" opacity="0.3"/>
+      <rect x="5" y="44" width="45" height="14" fill="#8b7355" opacity="0.3"/>
+      <text x="27" y="62" text-anchor="middle" fontSize="9" fill="#c9b896" opacity="0.5" fontWeight="bold">康砖</text>
+    </g>
+
+    <g transform="translate(350, 505)">
+      <rect x="0" y="0" width="45" height="60" rx="3"/>
+      <rect x="-4" y="5" width="53" height="50" rx="3"/>
+      <text x="22" y="40" text-anchor="middle" fontSize="8" fill="#c9b896" opacity="0.5" fontWeight="bold">雅细</text>
+    </g>
+
+    <g transform="translate(430, 492)">
+      <rect x="0" y="0" width="58" height="73" rx="3"/>
+      <rect x="-5" y="5" width="68" height="63" rx="3"/>
+      <text x="29" y="45" text-anchor="middle" fontSize="10" fill="#c9b896" opacity="0.5" fontWeight="bold">边茶</text>
+    </g>
+
+    <g transform="translate(510, 502)">
+      <rect x="0" y="0" width="50" height="63" rx="3"/>
+      <rect x="-4" y="4" width="58" height="55" rx="3"/>
+    </g>
+
+    <g transform="translate(580, 508)">
+      <rect x="0" y="0" width="42" height="57" rx="3"/>
+      <rect x="-3" y="4" width="48" height="49" rx="3"/>
+    </g>
+  </g>
+
+  <g fill="#3a2d20" opacity="0.75">
+    <ellipse cx="320" cy="465" rx="14" ry="5"/>
+    <rect x="312" y="420" width="16" height="45" rx="3"/>
+    <circle cx="320" cy="412" r="8"/>
+    <rect x="315" y="435" width="10" height="25" fill="#a89878" opacity="0.2"/>
+  </g>
+
+  <g fill="#3a2d20" opacity="0.7">
+    <ellipse cx="420" cy="470" rx="13" ry="5"/>
+    <rect x="413" y="425" width="14" height="45" rx="3"/>
+    <circle cx="420" cy="417" r="8"/>
+  </g>
+
+  <g stroke="#c9b896" stroke-width="0.8" fill="none" opacity="0.3">
+    <path d="M150,100 Q400,80 650,100" stroke-dasharray="4,6"/>
+  </g>
+
+  <rect width="800" height="600" filter="url(#grain)" opacity="0.35"/>
+  <rect width="800" height="600" fill="#8B5A2B" opacity="0.1" style="mix-blend-mode:multiply"/>
+
+  <rect x="0" y="0" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="#4a3c2c" opacity="0.5"/>
+</svg>

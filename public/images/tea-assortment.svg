@@ -1,0 +1,136 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.36
+        0 0 0 0 0.23
+        0 0 0 0 0.09
+        0 0 0 0.22 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="bg" x111 y110 x210 y211">
+      <stop offset1="0%" stop-color="#d9c8a6"/>
+      <stop offset1="100%" stop-color="#c9b896"/>
+    </linearGradient>
+    <linearGradient id="brick" x111 y110 x210 y211">
+      <stop offset1="0%" stop-color="#6b5030"/>
+      <stop offset1="100%" stop-color="#5a4028"/>
+    </linearGradient>
+    <linearGradient id="tea" x111 y110 x210 y211">
+      <stop offset1="0%" stop-color="#4a3c2c"/>
+      <stop offset1="100%" stop-color="#2E1F15"/>
+    </linearGradient>
+    <linearGradient id="label" x111 y111 x210 y211">
+      <stop offset1="0%" stop-color="#d9c8a6"/>
+      <stop offset1="100%" stop-color="#b8a682"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <g fill="url(#brick)" opacity="0.7">
+    <rect x="0" y="0" width="100" height="600"/>
+    <rect x="700" y110 width="100" height="600"/>
+    <rect x110 y110 width="600" height="80"/>
+    <rect x110 y="520" width="600" height="80"/>
+  </g>
+
+  <g fill="#5a4028" opacity="0.4">
+    <rect x="0" y110 width="100" height="30"/>
+    <rect x110 y110 width="100" height="30" x="40"/>
+    <rect x="200" y110 width="100" height="30" x="20"/>
+  </g>
+
+  <g>
+    <g transform="translate(130, 180)">
+      <rect x110 y1="0" width="140" height="100" rx="6" fill="url(#tea)"/>
+      <rect x="5" y="5" width="130" height="90" rx="4" fill="#3a2d20" opacity="0.5"/>
+      
+      <rect x="20" y="20" width="100" height="50" rx="3" fill="url(#label)"/>
+      <text x="70" y="45" text-anchor="middle" fontSize="18" fontWeight="bold" fill="#5a4028">康砖茶</text>
+      <text x="70" y="62" text-anchor="middle" fontSize="10" fill="#6b5030" letterSpacing="2">Ya'an Brick Tea</text>
+      
+      <rect x="30" y="78" width="80" height="12" rx="2" fill="#c62828" opacity="0.65"/>
+      <text x="70" y="87" text-anchor="middle" fontSize="8" fontWeight="bold" fill="#f5ecd7">南路边茶 · 每引百斤</text>
+    </g>
+
+    <g transform="translate(480, 160) scale(1.15)">
+      <rect x110 y1="0" width="140" height="100" rx="6" fill="url(#tea)"/>
+      <rect x="5" y="5" width="130" height="90" rx="4" fill="#3a2d20" opacity="0.5"/>
+      
+      <rect x="20" y="18" width="100" height="52" rx="3" fill="url(#label)"/>
+      <text x="70" y="45" text-anchor="middle" fontSize="20" fontWeight="bold" fill="#3E2723">雅细茶</text>
+      <text x="70" y="62" text-anchor="middle" fontSize="9" fill="#6b5030" letterSpacing="1">Fine Loose Leaf</text>
+      
+      <rect x="25" y="78" width="90" height="12" rx="2" fill="#f9a825" opacity="0.75"/>
+      <text x="70" y="87" text-anchor="middle" fontSize="8" fontWeight="bold" fill="#3a2d20">周公山正山 · 细芽</text>
+    </g>
+  </g>
+
+  <g>
+    <g transform="translate(100, 330)">
+      <ellipse cx="70" cy="80" rx="70" ry="25" fill="#5a4028" opacity="0.5"/>
+      <ellipse cx="70" cy="80" rx="55" ry="18" fill="#6b5030" opacity="0.4"/>
+      
+      <path d="M15,60 Q70,30 125,60 Q115,75 70,82 Q25,75 15,60 Z" fill="#4a3c2c"/>
+      <path d="M25,62 Q70,40 115,62 Q108,72 70,77 Q32,72 25,62 Z" fill="#5a4a30" opacity="0.6"/>
+      
+      <rect x="55" y="25" width="30" height="22" rx="2" fill="#c9b896" opacity="0.85"/>
+      <text x="70" y="40" text-anchor="middle" fontSize="11" fontWeight="bold" fill="#5a4028">下关</text>
+      <text x="70" y="50" text-anchor="middle" fontSize="7" fill="#6b5030">沱茶</text>
+    </g>
+
+    <g transform="translate(420, 320) scale(1.2)">
+      <path d="M15,65 Q70,20 125,65 Q118,80 70,88 Q22,80 15,65 Z" fill="#4a3c2c"/>
+      <path d="M25,63 Q70,30 115,63 Q108,75 70,80 Q32,75 25,63 Z" fill="#5a4a30" opacity="0.6"/>
+      
+      <ellipse cx="70" cy="38" rx="18" ry="10" fill="#6b5030" opacity="0.7"/>
+      
+      <rect x="45" y="58" width="50" height="14" rx="3" fill="#c62828" opacity="0.5"/>
+      <text x="70" y="68" text-anchor="middle" fontSize="9" fontWeight="bold" fill="#f5ecd7">班禅紧茶</text>
+    </g>
+  </g>
+
+  <g fill="#6b5030" opacity="0.7">
+    <g transform="translate(180, 490)">
+      <rect x110 y1="0" width="90" height="65" rx="4"/>
+      <rect x="5" y="5" width="80" height="55" rx="3" fill="#5a4028" opacity="0.5"/>
+      <rect x="15" y="18" width="60" height="30" rx="2" fill="url(#label)"/>
+      <text x="45" y="36" text-anchor="middle" fontSize="10" fontWeight="bold" fill="#5a4028">金尖</text>
+      <text x="45" y="46" text-anchor="middle" fontSize="6" fill="#6b5030">Jin Jian</text>
+    </g>
+    <g transform="translate(350, 500) scale(0.9)">
+      <rect x110 y1="0" width="90" height="60" rx="4"/>
+      <rect x="5" y="5" width="80" height="50" rx="3" fill="#5a4028" opacity="0.5"/>
+      <rect x="15" y="15" width="60" height="28" rx="2" fill="url(#label)"/>
+      <text x="45" y="33" text-anchor="middle" fontSize="11" fontWeight="bold" fill="#5a4028">藏茶</text>
+    </g>
+    <g transform="translate(520, 485) scale(1.05)">
+      <rect x110 y1="0" width="85" height="62" rx="4"/>
+      <rect x="5" y="5" width="75" height="52" rx="3" fill="#5a4028" opacity="0.5"/>
+      <rect x="13" y="16" width="58" height="30" rx="2" fill="url(#label)"/>
+      <text x="42" y="35" text-anchor="middle" fontSize="9" fontWeight="bold" fill="#5a4028">康藏茶厂</text>
+      <text x="42" y="45" text-anchor="middle" fontSize="6" fill="#6b5030">1950s</text>
+    </g>
+  </g>
+
+  <g fill="#5a4028" opacity="0.3">
+    <line x11="0" y11="120" x2="800" y2="120" stroke="#6b5030" strokeWidth="2"/>
+    <line x11="0" y1="540" x2="800" y2="540" stroke="#6b5030" strokeWidth="2"/>
+  </g>
+
+  <g fill="#7a6548" opacity="0.5">
+    <circle cx="100" cy="200" r="4"/>
+    <circle cx="150" cy="250" r="3"/>
+    <circle cx="650" cy="220" r="4"/>
+    <circle cx="700" cy="260" r="3"/>
+    <circle cx="400" cy="160" r="3.5"/>
+  </g>
+
+  <rect width="800" height="600" filter="url(#grain)" opacity="0.35"/>
+  <rect width="800" height="600" fill="#8B5A2B" opacity="0.12" style="mix-blend-mode:multiply"/>
+
+  <rect x="0" y="0" width="800" height="4" fill="#4a3c2c" opacity="0.5"/>
+  <rect x="0" y="596" width="800" height="4" fill="#4a3c2c" opacity="0.5"/>
+</svg>
